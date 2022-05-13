@@ -36,3 +36,12 @@ double Rectangle::compute_area() const {
     double area = getLength() * getWidth();
     return area;
 }
+
+__attribute__((unused)) bool Rectangle::checkForSquareness() const { // this works, although I want to add an operator replacement later
+    if(getWidth() == getLength() ) {
+        std::cout << "This Rectangle is also a square!" << std::endl;
+        return true;
+    }
+    std::cout << "This Rectangle is not a Square." << std::endl;
+    return false;
+}

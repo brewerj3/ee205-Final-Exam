@@ -21,11 +21,14 @@ protected:
 public:
     Rectangle(double newLength, double newWidth);
 
-    //getter
+    // Getters
     double getLength() const;
 
     double getWidth() const;
 
-    //Compute method
-    double compute_area()const override;
+    // Compute method
+    double compute_area() const override;
+
+    // Just for fun
+    __attribute__((unused)) bool checkForSquareness() const; //Check if a rectangle is also a square
 };
