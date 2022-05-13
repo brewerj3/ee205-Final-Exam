@@ -8,6 +8,7 @@
 /// @author Joshua Brewer <brewerj3@hawaii.edu>
 /// @date   13_May_2022
 ///////////////////////////////////////////////////////////////////////////////
+
 #include "Rectangle.h"
 
 #include <iostream>
