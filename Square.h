@@ -2,7 +2,7 @@
 ///         University of Hawaii, College of Engineering
 /// @brief  Final_Exam - EE 205 - Spr 2022
 ///
-/// @file Shape.h
+/// @file Square.h
 /// @version 1.0
 ///
 /// @author Joshua Brewer <brewerj3@hawaii.edu>
@@ -11,7 +11,9 @@
 
 #pragma once
 
-class Shape{
+#include "Rectangle.h"
+
+class Square: public Rectangle{
 public:
-    virtual double compute_area();
+    Square( double newSide ) : Rectangle(newSide, newSide);
 };

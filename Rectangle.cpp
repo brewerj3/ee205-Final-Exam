@@ -29,3 +29,8 @@ double Rectangle::getLength() const {
 double Rectangle::getWidth() const {
     return width;
 }
+
+double Rectangle::compute_area() {
+    double area = getLength() * getWidth();
+    return area;
+}
