@@ -13,5 +13,5 @@
 
 class Shape{
 public:
-    virtual double compute_area();
+    virtual double compute_area() const = 0;
 };

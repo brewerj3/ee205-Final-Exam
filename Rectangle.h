@@ -27,5 +27,5 @@ public:
     double getWidth() const;
 
     //Compute method
-    double compute_area()override;
+    double compute_area()const override;
 };

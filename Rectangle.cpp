@@ -19,7 +19,8 @@ Rectangle::Rectangle(double newLength, double newWidth) {
     if(newWidth <= 0){
         throw( std::invalid_argument("length and width must be graeter than 0") );
     }
-
+    length = newLength;
+    width = newWidth;
 }
 
 double Rectangle::getLength() const {
@@ -30,7 +31,7 @@ double Rectangle::getWidth() const {
     return width;
 }
 
-double Rectangle::compute_area() {
+double Rectangle::compute_area() const {
     double area = getLength() * getWidth();
     return area;
 }
