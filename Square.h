@@ -15,5 +15,9 @@
 
 class Square: public Rectangle{
 public:
-    Square( double newSide ) : Rectangle(newSide, newSide);
+    explicit Square( double newSide ) : Rectangle(newSide, newSide){
+        length = newSide;
+        width = newSide;
+    };
+    double getSide();
 };
